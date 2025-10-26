@@ -1,0 +1,8 @@
+      SSH Brute Force Attack 
+
+
+1. Wazuh detects multiple failed SSH logins 
+2. Alert sent to Shuffle 
+3. Shuffle enriches alert with IP reputation 
+4. If malicious, Shuffle blocks IP and notifies SOC team 
+5. Incident logged in TheHive for further analysis 
