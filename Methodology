@@ -1,0 +1,45 @@
+1. Deploy Wazuh SIEM
+
+ Install Wazuh server and agents on endpoints (Linux/Windows) 
+ Configure log collection: syslog, audit logs, file integrity monitoring 
+ Set up custom detection rules (e.g., SSH brute force, malware signatures) 
+ Enable active response modules (e.g., IP blocking, script execution) 
+
+2. Configure Shuffle SOAR 
+
+ Install Shuffle and connect it to Wazuh via API or webhook 
+ Create workflows to: 
+ Receive alerts from Wazuh 
+ Enrich alerts using VirusTotal or AbuseIPDB 
+ Create incidents in TheHive (optional) 
+ Notify security teams via Discord, Slack, or email 
+ Trigger automated responses (e.g., block IP, isolate host) 
+
+3. Alert Enrichment & Correlation 
+
+ Use Shuffle to add context to alerts: 
+ Check IP reputation 
+ Query file hashes 
+ Correlate with past incidents 
+ Prioritize alerts based on severity and asset criticality 
+
+4. Automated Response 
+
+ Define response actions in Shuffle: 
+ Run scripts to block malicious IPs 
+ Disable compromised user accounts 
+ Isolate infected machines from the network 
+ Log all actions for audit and compliance 
+
+5. Incident Management 
+
+ (Optional) Use TheHive to track incidents: 
+ Assign cases to analysts 
+ Document investigation steps 
+ Link related alerts and evidence
+
+6. Continuous Improvement 
+
+ Review detection rules and response workflows regularly 
+ Tune alert thresholds to reduce false positives 
+ Integrate machine learning models for anomaly detection 
