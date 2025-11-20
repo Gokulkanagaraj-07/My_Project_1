@@ -1,7 +1,7 @@
 # My_Project_1
 Real-Time Threat Monitoring &amp; Response Using Wazuh &amp; Shuffle
 
-**Introduction**
+
 
    With the evolving complexity of cyber threats, organizations need to embrace proactive and 
 automated security measures to protect their digital assets. This project offers a strong combination of 
